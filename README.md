@@ -1,4 +1,4 @@
-# Hi there! I'm [稲垣 真穂] 
+<!-- # Hi there! I'm [稲垣 真穂] 
 
 ### Frontend Engineering Student
 [愛知工業大学/経営情報システム専攻] で学びながら、**Next.js** と **TypeScript** を主軸に開発を行っている学生エンジニアです。
@@ -104,4 +104,4 @@ GitHubステータス
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=oharu121&show_icons=true&theme=radical" alt="Yuchen's GitHub stats" />
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=oharu121&layout=compact&theme=radical" alt="Top Languages" />
 </a>
-</p>
+</p> -->

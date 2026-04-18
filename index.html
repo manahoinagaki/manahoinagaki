@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>稲垣真穂 - ポートフォリオ</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- 見出し用：Montserrat、本文用：Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    /* リセット */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ナビゲーションバー */
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #2980b9;
+    }
+
+    /* メインコンテンツ */
+    .container {
+      max-width: 900px;
+      margin: 100px auto 40px;
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3em;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2em;
+      color: #2c3e50;
+      border-bottom: 2px solid #2c3e50;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    section h3 {
+      font-size: 1.5em;
+      margin: 20px 0 10px;
+      color: #34495e;
+    }
+
+    ol, ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      list-style: disc;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .no-underline {
+      text-decoration: none !important;
+      color: inherit;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9em;
+      border-top: 1px solid #ddd;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <!-- ナビゲーション -->
+  <nav>
+    <ul>
+      <li><a href="#about">自己紹介</a></li>
+      <li><a href="#research">研究</a></li>
+      <li><a href="#activities">活動実績</a></li>
+      <li><a href="#skills">スキルセット</a></li>
+      <li><a href="#works">制作物</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <header>
+      <h1>稲垣真穂</h1>
+      <p>E-mail：inagaki.aikou@gmail.com</p>
+    </header>
+    
+    <section id="about">
+    <h2>自己紹介</h2>
+    <p>愛知工業大学経営学部経営学科経営情報システム専攻（学士3年）で、衛生データ分析を行なっています。課題解決型のエンジニアになりたいと考えています。</p>
+
+    <section id="research">
+      <h2>研究</h2>
+      <h3>研究内容</h3>
+      <h4>研究テーマ</h4>
+      <p>衛星データを利用した農業・製造業分野の生産量推定</p>
+      <h4>自身の関与・貢献</h4>
+      <p>本研究の全行程を主体的に行いました。
+        具体的には、Google Earth Engineを活用し、欧州宇宙機関が運用するSentinel-1とSentinel-2の統合解析基盤を構築しました。
+        光学衛星の課題である「雲による欠損」を、全天候型のSARデータで補完するロジックを実装し、農業分野ではトウモロコシの収穫量推定、
+        製造業分野では工場駐車場の車両密度計測による稼働率推定を行いました。
+        特に、金属体に対する二面角反射を捉えるSARのVV偏波を活用し、
+        駐車場の車両密度を定量化する手法を独自に検討しました。
+        その結果、自動車販売台数との間に相関係数0.72という高い相関を示すことに成功し、学会で評価され、支部長賞を受賞しました。</p>
+
+    <h4>研究活動における技術的強み</h4>
+    <p>私の研究活動の核となるのは、Pythonを用いた大規模かつ多角的な衛星データのハンドリング経験です。
+        具体的には、以下の3点に注力して取り組みました。
+        1つ目、光学衛星のNDVI/NDRE指数と、SAR衛星の後方散乱係数を統合し、時系列で標準化して解析するスクリプトを自作しました。
+        これにより、天候に左右されない継続的なモニタリングを実現しました。
+        2つ目、Sentinelデータに加え、外部データを取得・統合しました。膨大な生データから、特定の農地や工場敷地内のポリゴンデータに基づき統計量を抽出するパイプラインを構築しました。
+        3つ目、推定指標と農務省統計や自動車販売台数との相関を分析しました。単なるデータの可視化に留まらず、なぜその相関が得られたのかという物理的・社会経済的な背景を考察し、モデルの有効性を検証しました。</p>
+
+      <h3>研究実績</h3>
+      <p>日本設備管理学会 東海支部 令和7年度 学生研究発表会（2026年2月）において「支部長賞」を受賞（査読なし）</p>    </section>
+    
+    <section id="activities">
+      <h2>活動実績</h2>
+      <ul>
+       <li>自由ヶ丘執行委員会(学生自治団体)  委員長</li>
+       <li>大学祭実行委員会（学生自治団体）  幹部</li>
+       <li>2025/12 かがやけ⭐︎あいちサスティナ研究所 優秀賞受賞</li>
+      </ul>
+    </section>
+    
+    <section id="skills">
+      <h2>スキルセット</h2>
+      <p><strong>言語:</strong> Javascript/React/Next.js, HTML/CSS</p>
+      <p><strong>コード管理:</strong> Github</p>
+    </section>
+    
+    <section id="works">
+      <h2>制作物</h2>
+      <ul>
+	<li></li>
+      </ul>
+    </section>
+    
+    <footer>
+      <p>&copy; 2026 Manaho Inagaki. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
